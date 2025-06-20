@@ -1,6 +1,6 @@
 # Hairroom - AI Hairstyle with Cloudflare Workers
 
-一个基于 React 和 Cloudflare Workers 构建的智能发型设计应用，利用 AI 技术为用户提供个性化的发型建议和图像生成服务。
+一个基于 React 和 Cloudflare Workers 构建的 [AI 发型修改](https://hairroom.app) 应用，利用 AI 技术为用户提供个性化的发型建议和图像生成服务。
 
 [English](README.md) | [中文](README.zh-CN.md)
 
