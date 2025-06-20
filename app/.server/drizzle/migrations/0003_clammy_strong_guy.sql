@@ -1,0 +1,1 @@
+ALTER TABLE `ai_tasks` ADD `ext` text DEFAULT '{}' NOT NULL;

@@ -1,0 +1,46 @@
+.DS_Store
+/node_modules/
+*.tsbuildinfo
+
+# React Router
+/.react-router/
+/build/
+
+# Cloudflare
+.mf
+.wrangler
+.dev.vars*
+worker-configuration.d.ts
+
+# Env
+.env
+.env.development
+.env.production
+.dev.vars
+
+# Dev
+.yarn/
+!.yarn/releases
+.vscode/*
+.vscode/_
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/*.code-snippets
+.idea
+.idea/workspace.xml
+.idea/usage.statistics.xml
+.idea/shelf
+_.suo
+_.ntvs_
+_.njsproj
+_.sln
+\*.sw?
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*

@@ -1,0 +1,17 @@
+User-Agent: *
+Allow: /
+Disallow: /assets/
+
+Sitemap: {DOMAIN}/sitemap.xml
+
+# For AI robots rule
+User-agent: GPTBot
+User-agent: Claude-Web
+User-agent: Anthropic-AI
+User-agent: PerplexityBot
+User-agent: GoogleOther
+User-agent: DuckAssistBot
+
+# llms for AI robots
+# LLM-Content: {DOMAIN}/llms.txt
+# LLM-Full-Content: {DOMAIN}/llms-full.txt

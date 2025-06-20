@@ -1,0 +1,71 @@
+/**
+ * For more details on how to configure Wrangler, refer to:
+ * https://developers.cloudflare.com/workers/wrangler/configuration/
+ */
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "ai-hairstyle",
+  "main": "./workers/app.ts",
+  "compatibility_date": "2025-04-04",
+  "compatibility_flags": ["nodejs_compat"],
+  "upload_source_maps": true,
+  // "routes": [
+  //   {
+  //     "pattern": "example.com",
+  //     "custom_domain": true
+  //   },
+  //   {
+  //     "pattern": "www.example.com",
+  //     "custom_domain": true
+  //   }
+  // ],
+  "vars": {
+    // Secrets
+    "SESSION_SECRET": "qf!XhJh^YL8lFUGA",
+    // Other Parameters
+    "CDN_URL": "https://cdn.example.com", // CDN URL for R2
+    "DOMAIN": "https://example.com/", // Deploy Domain
+    "GOOGLE_ANALYTICS_ID": "G-XXXXXXX", // GA
+    "GOOGLE_ADS_ID": "pub-xxxxxxxxxxxxxxxx", // Google AdSense
+    // Google OAuth
+    "GOOGLE_CLIENT_ID": "xxxxxxxxx",
+    "GOOGLE_CLIENT_SECRET": "xxxxxxxxx",
+    // API Request Authroized
+    "KIEAI_APIKEY": "xxxxxxxxxxxx", // Kie for 4o API, Kontext API
+    // Payment
+    "CREEM_KEY": "creem_xxxxxxxxxx",
+    "CREEM_TEST_KEY": "creem_test_xxxxxxxxxx",
+    "CREEM_WEBHOOK_SECRET": "xxxxxxxxxxx",
+    // Default Values
+    "INITLIZE_CREDITS": 3 // Basic Credits (Gift for new user)
+  },
+  "observability": {
+    "enabled": true
+  },
+  /**
+   * Bindings
+   * Bindings allow your Worker to interact with resources on the Cloudflare Developer Platform, including
+   * databases, object storage, AI inference, real-time communication and more.
+   * https://developers.cloudflare.com/workers/runtime-apis/bindings/
+   */
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "ai-hairstyle",
+      "database_id": "xxxxxxxxx",
+      "migrations_dir": "./app/.server/drizzle/migrations"
+    }
+  ],
+  "kv_namespaces": [
+    {
+      "binding": "KV",
+      "id": "xxxxxxxxx"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "R2",
+      "bucket_name": "ai-hairstyle"
+    }
+  ]
+}
