@@ -37,7 +37,7 @@ This project is built with a modern tech stack:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/fine54/ai-hairstyle.git
+git clone https://github.com/neyric/ai-hairstyle.git
 cd ai-hairstyle
 ```
 
@@ -213,7 +213,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 For questions or suggestions, please reach out via:
 
-- Open an [Issue](https://github.com/fine54/ai-hairstyle/issues)
+- Open an [Issue](https://github.com/neyric/ai-hairstyle/issues)
 
 ---
 

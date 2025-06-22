@@ -37,7 +37,7 @@
 ### 1. 克隆项目
 
 ```bash
-git clone https://github.com/fine54/ai-hairstyle.git
+git clone https://github.com/neyric/ai-hairstyle.git
 cd ai-hairstyle
 ```
 
@@ -210,7 +210,7 @@ pnpm run deploy
 
 如有问题或建议，请通过以下方式联系：
 
-- 提交 [Issue](https://github.com/fine54/ai-hairstyle/issues)
+- 提交 [Issue](https://github.com/neyric/ai-hairstyle/issues)
 
 ---
 
