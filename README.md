@@ -1,6 +1,6 @@
 # Hairroom - AI Hairstyle with Cloudflare Workers
 
-An [AI hairstyle changer](https://hairroom.app) application built with React and Cloudflare Workers, leveraging AI technology to provide personalized hairstyle recommendations and image generation services.
+An AI hairstyle changer application built with React and Cloudflare Workers, leveraging AI technology to provide personalized hairstyle recommendations and image generation services.
 
 [English](README.md) | [中文](README.zh-CN.md)
 
